@@ -43,21 +43,21 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenuArchivo = new javax.swing.JMenu();
         jMenuNuevo = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItemCiudad = new javax.swing.JMenuItem();
         jMenuItemEquipos = new javax.swing.JMenuItem();
         jMenuItemPartidos = new javax.swing.JMenuItem();
         jMenuItemMarcador = new javax.swing.JMenuItem();
         jMenuItemSalir = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jMenu_ver = new javax.swing.JMenu();
         jMenuItemTablaPos = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItemCiudad1 = new javax.swing.JMenuItem();
         jMenuItemMarcador1 = new javax.swing.JMenuItem();
         jMenuItemPartidos1 = new javax.swing.JMenuItem();
         jMenuItemEquipos1 = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenu_eliminar = new javax.swing.JMenu();
+        jMenuItemMarcador2 = new javax.swing.JMenuItem();
+        jMenu_modificar = new javax.swing.JMenu();
+        jMenuItemMarcador3 = new javax.swing.JMenuItem();
 
         jMenuItem2.setText("jMenuItem2");
 
@@ -79,14 +79,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jMenuNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/add.png"))); // NOI18N
         jMenuNuevo.setText("Nuevo");
 
-        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/city.png"))); // NOI18N
-        jMenuItem1.setText("Ciudad");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemCiudad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/city.png"))); // NOI18N
+        jMenuItemCiudad.setText("Ciudad");
+        jMenuItemCiudad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                jMenuItemCiudadActionPerformed(evt);
             }
         });
-        jMenuNuevo.add(jMenuItem1);
+        jMenuNuevo.add(jMenuItemCiudad);
 
         jMenuItemEquipos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/team.png"))); // NOI18N
         jMenuItemEquipos.setText("Equipos");
@@ -123,7 +123,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenuArchivo);
 
-        jMenu2.setText("Ver");
+        jMenu_ver.setText("Ver");
 
         jMenuItemTablaPos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/bar2.png"))); // NOI18N
         jMenuItemTablaPos.setText("Tabla de Posiciones");
@@ -132,16 +132,16 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 jMenuItemTablaPosActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItemTablaPos);
+        jMenu_ver.add(jMenuItemTablaPos);
 
-        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/city.png"))); // NOI18N
-        jMenuItem4.setText("Ciudad");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemCiudad1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/city.png"))); // NOI18N
+        jMenuItemCiudad1.setText("Ciudad");
+        jMenuItemCiudad1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
+                jMenuItemCiudad1ActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItem4);
+        jMenu_ver.add(jMenuItemCiudad1);
 
         jMenuItemMarcador1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/numeric.png"))); // NOI18N
         jMenuItemMarcador1.setText("Marcador");
@@ -150,7 +150,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 jMenuItemMarcador1ActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItemMarcador1);
+        jMenu_ver.add(jMenuItemMarcador1);
 
         jMenuItemPartidos1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/match.png"))); // NOI18N
         jMenuItemPartidos1.setText("Partidos");
@@ -159,7 +159,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 jMenuItemPartidos1ActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItemPartidos1);
+        jMenu_ver.add(jMenuItemPartidos1);
 
         jMenuItemEquipos1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/team.png"))); // NOI18N
         jMenuItemEquipos1.setText("Equipos");
@@ -168,35 +168,35 @@ public class VentanaPrincipal extends javax.swing.JFrame {
                 jMenuItemEquipos1ActionPerformed(evt);
             }
         });
-        jMenu2.add(jMenuItemEquipos1);
+        jMenu_ver.add(jMenuItemEquipos1);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar1.add(jMenu_ver);
 
-        jMenu1.setText("Eliminar");
+        jMenu_eliminar.setText("Eliminar");
 
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/numeric.png"))); // NOI18N
-        jMenuItem3.setText("Marcador");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemMarcador2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/numeric.png"))); // NOI18N
+        jMenuItemMarcador2.setText("Marcador");
+        jMenuItemMarcador2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                jMenuItemMarcador2ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem3);
+        jMenu_eliminar.add(jMenuItemMarcador2);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(jMenu_eliminar);
 
-        jMenu3.setText("Modificar");
+        jMenu_modificar.setText("Modificar");
 
-        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/numeric.png"))); // NOI18N
-        jMenuItem5.setText("Marcador");
-        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItemMarcador3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Iconos/numeric.png"))); // NOI18N
+        jMenuItemMarcador3.setText("Marcador");
+        jMenuItemMarcador3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem5ActionPerformed(evt);
+                jMenuItemMarcador3ActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem5);
+        jMenu_modificar.add(jMenuItemMarcador3);
 
-        jMenuBar1.add(jMenu3);
+        jMenuBar1.add(jMenu_modificar);
 
         setJMenuBar(jMenuBar1);
 
@@ -226,12 +226,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jMenuItemEquiposActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+    private void jMenuItemCiudadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCiudadActionPerformed
         ciudades e = null;
         e = new ciudades();
         jDesktopPane1.add(e);
         e.show();
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    }//GEN-LAST:event_jMenuItemCiudadActionPerformed
 
     private void jMenuItemPartidosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemPartidosActionPerformed
         partidos e = null;
@@ -265,7 +265,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         e.show();
     }//GEN-LAST:event_jMenuItemTablaPosActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+    private void jMenuItemCiudad1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCiudad1ActionPerformed
         // TODO add your handling code here:
         ciudades_con e = null;
         try {
@@ -275,7 +275,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         }
         jDesktopPane1.add(e);
         e.show();
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
+    }//GEN-LAST:event_jMenuItemCiudad1ActionPerformed
 
     private void jMenuItemMarcador1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemMarcador1ActionPerformed
         // TODO add your handling code here:
@@ -313,21 +313,21 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         e.show();
     }//GEN-LAST:event_jMenuItemEquipos1ActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+    private void jMenuItemMarcador2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemMarcador2ActionPerformed
         // TODO add your handling code here:
         marcador_eli e = null;
         e = new marcador_eli();
         jDesktopPane1.add(e);
         e.show();
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    }//GEN-LAST:event_jMenuItemMarcador2ActionPerformed
 
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+    private void jMenuItemMarcador3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemMarcador3ActionPerformed
         // TODO add your handling code here:
         marcador_act e = null;
         e = new marcador_act();
         jDesktopPane1.add(e);
         e.show();
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
+    }//GEN-LAST:event_jMenuItemMarcador3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -364,24 +364,24 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenuArchivo;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItemCiudad;
+    private javax.swing.JMenuItem jMenuItemCiudad1;
     private javax.swing.JMenuItem jMenuItemEquipos;
     private javax.swing.JMenuItem jMenuItemEquipos1;
     private javax.swing.JMenuItem jMenuItemMarcador;
     private javax.swing.JMenuItem jMenuItemMarcador1;
+    private javax.swing.JMenuItem jMenuItemMarcador2;
+    private javax.swing.JMenuItem jMenuItemMarcador3;
     private javax.swing.JMenuItem jMenuItemPartidos;
     private javax.swing.JMenuItem jMenuItemPartidos1;
     private javax.swing.JMenuItem jMenuItemSalir;
     private javax.swing.JMenuItem jMenuItemTablaPos;
     private javax.swing.JMenu jMenuNuevo;
+    private javax.swing.JMenu jMenu_eliminar;
+    private javax.swing.JMenu jMenu_modificar;
+    private javax.swing.JMenu jMenu_ver;
     // End of variables declaration//GEN-END:variables
 }
