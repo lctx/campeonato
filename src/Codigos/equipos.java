@@ -244,9 +244,26 @@ public class equipos extends javax.swing.JInternalFrame {
         } catch (SQLException ex) {
             Logger.getLogger(equipos.class.getName()).log(Level.SEVERE, null, ex);
         }
+        encerar();
         con.commit();
     }//GEN-LAST:event_jButton_addActionPerformed
 
+    
+    private void encerar(){
+        String[] codigos = {"EQUIPO_POS ", "PAR_JUG_POS", "PAR_GAN_POS", "PAR_EMP_POS","PAR_PER_POS","GOL_FAV_POS","GOL_CON_POS","GOL_DIF_POS","PUNTOS_POS"};
+        String[] campos = new String[9];
+        campos[0] = jTextFieldCódigo.getText().toUpperCase();
+        campos[1]="0";
+        campos[2]="0";
+        campos[3]="0";
+        campos[4]="0";
+        campos[5]="0";      
+        campos[6]="0";
+        campos[7]="0";
+        campos[8]="0";
+        con.escribir("POSICIONES", codigos, campos);
+    }
+    
     private void jTextFieldCódigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCódigoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldCódigoActionPerformed
